@@ -8,17 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>register_Luhuihuang</title>
 </head>
 <body>
-<form method="post" action="register">
-    Username<input type="text" name="username"/><br/>
-    Password<input type="password" name="password"/><br/>
-    Email<input type="text" name="email"/><br/>
-    Gender:<input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female<br/>
-    Date of Birth:<input type="text" name="birthDate"><br/>
-    <input type="submit" value="Register"/>
+<h2>This Is My Homework_Code Exercise#1</h2>
+<a href="http://localhost:8080/QiBaochao2020211001001104_war_exploded/qbc">Please Click Here^.^</a><br>
+<h2>New User Registration!</h2><br/><br/>
+<form method="post" action="/register">
+    Userame:<input type="text" name="Username" placeholder ="Username" style="background:#FFFCEC;border: 0;width:300px;height:30px;margin-bottom: 10px;" required autofocus><br/>
+    Password:<input type="password" name="password" minlength="8" placeholder ="Password" style="background:#FFFCEC;border: 0;width:300px;height:30px;margin-bottom: 10px;"><br/>
+    Email:  <input type="email" name="Email" placeholder ="Email" style="background:#FFFCEC;border: 0;width:300px;height:30px;margin-bottom: 10px;"required autofocus><br/>
+    Gender<input type="radio" name="sex" value="male" checked>Male
+    <input type="radio" name="sex" value="female" style="margin-bottom: 10px;">Female
+    <br/>
+    Bithdate:<input type="date" name="BirthDate" placeholder ="Date of Birth(yyyy-mm-dd)" style="background:#FFFCEC;border: 0;height:30px;width:300px;margin-bottom: 10px;"><br/>
+    <input type="submit" value="Register" style="background:#FF9224; color:#fff; width:100px; height:30px;border: 0;"/>
 </form>
-
 </body>
 </html>
