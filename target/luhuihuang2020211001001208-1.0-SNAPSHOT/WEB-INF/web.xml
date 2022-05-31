@@ -4,6 +4,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.Luhuihuang.week2.demo.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>com.Luhuihuang.week3.demo.LifeCycleServlet</servlet-class>
     </servlet>
@@ -15,8 +23,56 @@
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>JDBCServlet</servlet-name>
+        <servlet-class>com.Luhuihuang.week4.demo.JDBCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JDBCServlet</servlet-name>
+        <url-pattern>/JDBC</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:sqlserver://localhost:1433;database=userdb;encrypt=false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>sa</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>123456</param-value>
+    </context-param>
+    <filter>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.AdminAuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>HelloFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.HelloFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>HelloFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FrontEndAuthenticationFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.FrontEndAuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FrontEndAuthenticationFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
 </web-app>
