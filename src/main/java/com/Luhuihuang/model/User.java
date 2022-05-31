@@ -1,18 +1,20 @@
 package com.Luhuihuang.model;
 
-import java.util.Date;
 public class User {
+
     private int id;
     private String username;
     private String password;
     private String email;
     private String gender;
-    private java.util.Date birthDate;
+    private String birthDate;
+    //constructor
 
     public User() {
     }
+    //full
 
-    public User(int id, String username, String password, String email, String gender, Date birthDate) {
+    public User(int id, String username, String password, String email, String gender, String birthDate) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -20,6 +22,8 @@ public class User {
         this.gender = gender;
         this.birthDate = birthDate;
     }
+
+    //getter and setter
 
     public int getId() {
         return id;
@@ -61,17 +65,19 @@ public class User {
         this.gender = gender;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
+    //toString
+
     @Override
     public String toString() {
-        return "User{" +
+        return "user{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
