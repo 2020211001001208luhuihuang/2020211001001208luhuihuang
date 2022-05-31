@@ -10,6 +10,7 @@
 <head>
     <title>Login</title>
 </head>
+
 <body>
 <form action="validate.jsp">
     Username : <input type="text" name="username"><br>

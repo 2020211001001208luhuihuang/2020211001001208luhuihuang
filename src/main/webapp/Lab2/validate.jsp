@@ -10,6 +10,7 @@
 <head>
   <title>validate</title>
 </head>
+
 <body>
 <%--Todo 1: Use <jsp:useBean> to create a Login bean instance in request scope --%>
 <jsp:useBean id="user" class="com.Luhuihuang.Lab2.Login" scope="request"></jsp:useBean>
