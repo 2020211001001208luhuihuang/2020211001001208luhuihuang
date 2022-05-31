@@ -10,6 +10,7 @@ import java.io.IOException;
 @WebServlet(name = "Exercise1Servlet", value = "/exercise1")
 public class Exercise1Servlet extends HttpServlet {
     int index;
+
     @Override
     public void init() throws ServletException {
         super.init();

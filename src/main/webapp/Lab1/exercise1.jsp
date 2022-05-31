@@ -14,7 +14,5 @@
 <h3>${val}</h3>
 </body>
 </html>
-
-
 </body>
 </html>
