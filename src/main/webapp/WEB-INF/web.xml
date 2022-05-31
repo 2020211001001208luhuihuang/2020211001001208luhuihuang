@@ -51,4 +51,28 @@
         <param-name>password</param-name>
         <param-value>123456</param-value>
     </context-param>
+    <filter>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.AdminAuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>HelloFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.HelloFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>HelloFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FrontEndAuthenticationFilter</filter-name>
+        <filter-class>com.Luhuihuang.filter.FrontEndAuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FrontEndAuthenticationFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
 </web-app>
