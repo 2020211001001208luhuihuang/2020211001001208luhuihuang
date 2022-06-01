@@ -7,5 +7,4 @@
 			<h2><a href="<%=basePath%>shop">Continue to enjoy shopping with us...</a></h2>
 		</div>
 	</div>
-
   <%@include file="footer.jsp" %>

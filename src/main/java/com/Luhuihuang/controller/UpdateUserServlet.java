@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.SQLException;
 
+
 @WebServlet(name = "UpdateUserServlet" ,value = "/updateUser")
 public class UpdateUserServlet extends HttpServlet {
     Connection con=null;

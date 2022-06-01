@@ -10,7 +10,6 @@
 					<div class="login-form"><!--login form-->
 						<h2>Update User Info</h2>
 <% if(!(request.getAttribute("user")==null)){
-    
    com.Luhuihuang.model.User u = (com.Luhuihuang.model.User)request.getAttribute("user");
 %>
 <%if(!(request.getAttribute("message")==null)){
